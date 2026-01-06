@@ -21,6 +21,7 @@ public:
         vector<string> ans;
         int open = n, close = n;
         string s="";
+        s.reserve(2*n);
         helper(open, close, ans, s);
         return ans;
     }
